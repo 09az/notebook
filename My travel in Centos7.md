@@ -240,6 +240,13 @@ chmod +x /etc/init.d/php-fpm
 7. 启动php-fpm
 /etc/init.d/php-fpm start
 
+# 安装mariadb
+`[09az@localhost ~]$ sudo yum -y install mariadb*`
+`[09az@localhost ~]$ systemctl start mariadb.service`
+`sudo mysql_secure_installation`
+`[09az@localhost ~]$ systemctl enable  mariadb.service`
+
+
 
 
 
